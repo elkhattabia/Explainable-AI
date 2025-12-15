@@ -1,40 +1,29 @@
-Explainable AI with Grad-CAM (ResNet18)
+# 🔍 Explainable AI with Grad-CAM (ResNet18)
 
-A quick demo showing how Grad-CAM highlights what parts of an image a ResNet18 model looks at to make predictions.
+A quick demo showing how **Grad-CAM** highlights the regions a ResNet18 model focuses on when making predictions.
 
-What is Grad-CAM?
+## What is Grad-CAM?
+Grad-CAM generates heatmaps from the gradients of the model’s last convolutional layer, providing visual explanations of its decisions.
 
-Grad-CAM creates heatmaps from the model's last convolutional layer gradients to explain its decisions.
+## Demo
+Upload an image to see a heatmap overlay that reveals the most important regions.
 
-Demo
+## Tech Stack
+- **PyTorch**  
+- **Pretrained ResNet18**  
+- **Matplotlib**
 
-Upload an image to see a heatmap overlay showing important regions.
+## How it Works
+1. Load the model  
+2. Hook activations and gradients  
+3. Run inference  
+4. Backpropagate  
+5. Generate heatmap  
 
-Tech
+## Why?
+Explainability builds trust and helps debug deep learning models.
 
-PyTorch
+## Next Steps
+Try it on your own images or datasets, or extend it into an interactive app for exploring explanations.
 
-Pretrained ResNet18
-
-Matplotlib
-
-How it works
-
-Load the model
-
-Hook activations and gradients
-
-Run inference
-
-Backpropagate
-
-Generate heatmap
-
-Why?
-
-Explainability helps build trust and debug models.
-
-Next steps
-
-Try it on your own images or datasets, or build an interactive app to explore explanations.
-![Cam results](cam_on_dog.png)
+![CAM Results](cam_on_dog.png)
