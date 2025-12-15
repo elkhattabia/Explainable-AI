@@ -37,4 +37,4 @@ Explainability helps build trust and debug models.
 Next steps
 
 Try it on your own images or datasets, or build an interactive app to explore explanations.
-![Alt text](dog.png)
+![Cam results](cam_on_dog.png)
